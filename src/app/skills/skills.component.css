@@ -1,0 +1,111 @@
+.skills-main-container{
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: scroll; */
+}
+
+.heading-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #542E71;
+}
+.skills-container{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-evenly;
+    transform: scale(0.8);
+    gap:20px;
+    height: 80%;
+}
+
+.skills-container .coding-love{
+    grid-column: 1/4;
+}
+.skills-container .skill1{
+    grid-column: 2/4;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.skill-progressbar{
+    border-radius: 13px;
+    padding: 3px;
+    border: #542E71 solid 2px;
+}
+
+.advanced{
+    height: 15px;
+    width: 100%;
+    background-color: #542E71;
+    border-radius: 10px;
+    animation: advanced-anim 1500ms ease-in-out;
+}
+
+@keyframes advanced-anim {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+    
+}
+.intermediate{
+    height: 15px;
+    width: 70%;
+    background-color: #542E71;
+    border-radius: 10px;
+    animation: intermediate-anim 1500ms ease-in-out;
+}
+
+@keyframes intermediate-anim {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+    
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media(max-width:768px){
+    .skills-main-container{
+        overflow-y: scroll;
+    }
+    
+    .skills-container{
+        display: grid;
+        grid-template-columns: 80%;
+        transform: scale(0.8);
+    }
+    .skills-container .coding-love{
+        grid-column: auto;
+    }
+    .skills-container .skill1{
+        grid-column: auto;
+    }
+}
+@media(max-width:500px){
+    .skills-container{
+        display: grid;
+        grid-template-columns: 80%;
+        transform: none;
+    }
+    .skills-container .coding-love{
+        grid-column: auto;
+    }
+    .skills-container .skill1{
+        grid-column: auto;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+}

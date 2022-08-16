@@ -1,0 +1,32 @@
+<div ngClass="header">
+    <span ngClass="icon">SR</span>
+    <nav id="navbar" >
+        <ul>
+            <a  routerLink="/home" ngClass="link">
+                Home
+            </a>
+        </ul>
+        <ul>
+            <a  routerLink="/about" ngClass="link">
+                About
+            </a>
+        </ul>
+        <ul>
+            <a  routerLink="/projects" ngClass="link">
+                Projects
+            </a>
+        </ul>
+        <ul>
+            <a  routerLink="/skills" ngClass="link">
+                Skills
+            </a>
+
+        </ul>
+        <ul>
+            <a  routerLink="/contact" ngClass="link">
+                Contact
+            </a>
+        </ul>
+    </nav>
+    <img src="{{menu}}" ngClass="menu" onClick={navbaropen}/>
+</div>

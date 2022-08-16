@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+.about-words{
+    margin-left: 70px;
+    margin-top: 30px;
+}
+.navbar{
+    display: none;
+}
+.about-line1{
+    font-weight: bolder;
+    font-size: 80px;
+    color: #542E71;
+    animation: about-line1 2s steps(28);
+    white-space: nowrap;
+    overflow: hidden;
+}
+@keyframes about-line1 {
+    from {
+        width: 0;
+        border-right: 3px solid;
+    }
+    to{
+        width: 28ch;
+    }
+}
+.about-description{
+    margin-top: 30px;
+    margin-right: 150px;
+}
+.para1,.para2,.para3{
+    font-size: 40px;
+    color: #542E71;
+    font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 20px;
+    animation-name: para-fadein ;
+    animation-duration: 4s;
+}
+@keyframes para-fadein {
+    0%{
+       visibility: hidden;
+        opacity: 0;
+    }
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media(max-width:1440px){
+    .about-line1{
+        font-size: 60px;
+    }
+    .para1,.para2,.para3{
+        font-size: 20px;
+    }
+}
+@media(max-width:1024px){
+    .about-description{
+        width: 90%;
+    }
+    .about-line1{
+        font-size: 50px;
+    }
+    .para1,.para2,.para3{
+        width: 100%;
+        font-size: 18px;
+    }
+}
+@media(max-width:768px){
+    .about-line1{
+        font-size: 40px;
+    }
+    .para1,.para2,.para3{
+        font-size: 16px;
+    }
+}
+@media(max-width:650px){
+    .about-words{
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+    .about-line1{
+        font-size: 30px;
+    }
+    .para1,.para2,.para3{
+        font-size: 14px;
+    }
+}
+@media(max-width:450px){
+    .about-words{
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+    .about-line1{
+        font-size: 25px;
+    }
+    .para1,.para2,.para3{
+        font-size: 14px;
+    }
+}
+@media(max-width:375px){
+    .about-words{
+        margin-left: 25px;
+        margin-top: 10px;
+    }
+    .about-line1{
+        font-size: 22px;
+    }
+    .para1,.para2,.para3{
+        font-size: 14px;
+    }
+}
+@media(max-width:340px){
+    .about-words{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .about-line1{
+        font-size: 22px;
+    }
+    .para1,.para2,.para3{
+        font-size: 14px;
+    }
+}
